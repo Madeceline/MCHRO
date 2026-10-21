@@ -1,0 +1,17 @@
+[project]
+name = "llm-snd"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "litellm>=1.101.0",
+    "marimo>=0.24.2",
+    "matplotlib>=3.9",
+    "numpy>=2.5.3",
+    "scipy>=1.13",
+]
+
+# 构建 wheel/sdist 时一并携带运行期要读取的六算子提示词文件。
+[tool.setuptools.package-data]
+multi_agent_snd = ["operator_prompts.txt"]

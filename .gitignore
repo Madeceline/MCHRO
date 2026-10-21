@@ -1,0 +1,38 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# 本地 API 密钥配置，禁止提交到版本库
+llmapi.env
+
+# 实验运行产物与本地申报材料
+runs/
+application_source/
+
+# 本地基准实例、对照结果与论文图表
+benchmarks/
+benchmark_figures/
+final_comparison.json
+final_solution.json
+*.json.*.tmp
+.pytest_cache/
+
+# Local credentials, generated examples, and private documentation
+.env
+.env.*
+*.env
+temporal_instance_example.json
+docs/
+/博弈详解.md
+/结果分析.md
+/项目数学原理与算法结构.md
+/scripts/build_multi_agent_report.py
+/scripts/fill_kylin_application.py
+*.docx
